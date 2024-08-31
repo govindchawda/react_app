@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.venny{
+  width: 100%;
+}
+p{
+  text-align: justify;
+  .spinnaker-regular {
+    font-family: "Spinnaker", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  line-height: 25px;
+  font-size: 17px;
+  margin-left: auto;
+  margin-right: auto;
+}
+a{
+  text-decoration: none;
+}
+.port{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.port img{
+  width: 32%;
+  height: 310px;
+  padding-bottom: 15px;
+}
+.cont{
+  display: flex;
+}
+nav a{
+    color: #000;
+    font-size: 16px;
+}
+nav ul{
+  display: flex;
+  margin-left: auto;
+}
+nav ul li{
+  padding: 8px;
+  list-style-type: none;
+  font-size: 16px;
+  font-weight: bolder;
+}
+nav ul li a{
+  color: #000;
+}
+nav ul li a:hover{
+  color: aqua;
+}
+/* banner section start */
+.Banner{
+  position: relative;
+}
+.Banner_Image{
+  background: url(https://i.ytimg.com/vi/FfMMFa09_YI/maxresdefault.jpg);
+  /* background: url(https://www.rentallscript.com/resources/content/images/2021/09/React--1-.gif); */
+  width: 100%;
+  height: 600px;
+  background-size: 100% 100%;
+  background-position: center;
+}
+.Banner_Image::before{
+  content: "";
+  width: 100%;
+  height: 600px;
+  background-color: gray;
+  position: absolute;
+  opacity: 0.2;
+}
